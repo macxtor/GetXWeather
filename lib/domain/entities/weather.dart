@@ -4,20 +4,15 @@ class Weather {
   final String localTime;
   final String lastUpdated;
   final String temperatureCelsius;
-  final Condition condition;
-
-  Weather(
-      {required this.location,
-      required this.country,
-      required this.localTime,
-      required this.lastUpdated,
-      required this.temperatureCelsius,
-      required this.condition});
-}
-
-class Condition {
-  final String text;
+  final String condition;
   final String icon;
 
-  Condition({required this.text, required this.icon});
+  Weather({required this.location,
+    required this.country,
+    required this.localTime,
+    required this.lastUpdated,
+    required this.temperatureCelsius,
+    required this.condition,
+    required this.icon
+  });
 }

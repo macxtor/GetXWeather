@@ -8,9 +8,7 @@ Weather toDomain(WeatherResponseDto dto) {
     localTime: dto.location.localtime,
     lastUpdated: dto.current.lastUpdated,
     temperatureCelsius: dto.current.tempC.toString(),
-    condition: Condition(
-      text: dto.current.condition.text,
-      icon: dto.current.condition.icon,
-    ),
+    condition: dto.current.condition.text,
+    icon: dto.current.condition.icon,
   );
 }
