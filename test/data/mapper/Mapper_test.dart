@@ -30,9 +30,8 @@ void main() {
       expect(result.localTime, equals('TestTime'));
       expect(result.lastUpdated, equals('TestLastUpdated'));
       expect(result.temperatureCelsius, equals('25.0')); // Convert the double to String
-      expect(result.condition, isA<Condition>());
-      expect(result.condition.text, equals('TestCondition'));
-      expect(result.condition.icon, equals('TestIcon'));
+      expect(result.condition, equals('TestCondition'));
+      expect(result.icon, equals('TestIcon'));
     });
   });
 }
